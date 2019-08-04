@@ -24,7 +24,12 @@ config = tf.ConfigProto()
 config.gpu_options.per_process_gpu_memory_fraction = 0.4
 session = tf.Session(config=config, ...)
 ```
-
+或者
+```
+gpu_fraction = 0.1
+gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=gpu_fraction)
+sess = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
+```
 
 ## tensorflow中使用指定的GPU及GPU显存
 
