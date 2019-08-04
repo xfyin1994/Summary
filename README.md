@@ -4,7 +4,7 @@
 因此，我们可以在运行我们的tensorflow程序的时候，指定程序使用的特定GPU：
 
 Ⅰ. 在终端上配置：
-CUDA_VISIBLE_DEVICES=0 python your_python.py
+···CUDA_VISIBLE_DEVICES=0 python your_python.py···
 或者：
 export CUDA_VISIBLE_DEVICES="0"
 python your_python.py
